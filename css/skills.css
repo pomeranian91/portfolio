@@ -1,0 +1,25 @@
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.skills-text {
+  width: 40%;
+  float: left;
+}
+.skills-icons {
+  float: left;
+  width: 40%;
+  padding: 30px;
+}
+.skills-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: inherit;
+}
+.skills-icons_option {
+  width: 25%;
+  margin: auto;
+}

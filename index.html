@@ -7,10 +7,7 @@
     <!--구글폰트-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jua&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="../img/mypome.ico" />
     <link
       rel="stylesheet"
@@ -20,15 +17,13 @@
     />
 
     <link href="css/main.css" rel="stylesheet" />
-    <script
-      src="https://kit.fontawesome.com/5e072e4251.js"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <link href="css/nav.css" rel="stylesheet" />
+    <link href="css/home.css" rel="stylesheet" />
+    <link href="css/skills.css" rel="stylesheet" />
+    <link href="css/project.css" rel="stylesheet" />
+    <link href="css/content.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5e072e4251.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Yong's Portfolio</title>
   </head>
   <body>
@@ -43,17 +38,21 @@
       <div class="grid-container_nav">CONTECT</div>
       <div></div>
     </div>
-    <div class="main-container">
-      <div>
-        <h1>FRONT-END 개발자 포트폴리오</h1>
-        <p>안녕하세요</p>
-        <p>전문적인 프론트앤드 개발자가 되기 위해</p>
-        <p>노력하는 조용우 입니다.</p>
-        <div>
-          <span>조용우</span>
-          <span>1991.04.29</span>
-          <span>비전공 대졸</span>
-        </div>
+    <div class="home-container">
+      <div class="home-box home-hello">
+        <span>안녕하세요</span>
+        <span>FRONT-END 개발자가 되기 위해</span>
+        <span>노력하는 조용우 입니다.</span>
+      </div>
+      <div class="home-box home-text">
+        <span>어릴때 부터 개발자가 되고 싶었지만</span>
+        <span>성적에 맞춘 대학 진학과 안일함에 다른 편한 길을 택했었습니다.</span>
+        <span>이후 사회생활을 하며 항상 생각했습니다.</span>
+        <span>지금이라도 시작해야 할까? 늦지 않았을까?</span>
+        <span>이런 고민만 하며 후회 한지 몇 년이 지나 고민이 아닌 행동을 하고 있습니다.</span>
+      </div>
+      <div class="home-box home-last">
+        <span>남들보다 시작은 늦었지만 전문가가 되기 위해 노력하겠습니다.</span>
       </div>
     </div>
     <div class="skills-container">
@@ -61,11 +60,20 @@
       스크롤 위치에 따라 opacity로 나눠 설명
     옆에 멘트도 변경가능 해야함 js써야겠네  -->
       <div class="skills-text">
+        처음엔 이미지 꽉차게 한후 스크롤 내려가면 변하도록
         <p>
-          국비지원 교육과 몇몇 인강을 들은 후 따라하기만하니 실력이 늘지 않는
-          다는것을 깨닫고 혼자 고민하고 공부하고 있습니다. 강의를 통해 꾸준히
-          배우며 배운 기술들을 활용하여 만들 수 있는 작업물에 대해 고민하고
+          다양한 기술들을 구사할 수 있는 능력도 중요하지만 각각의 기술들을 저 정확히 알기 위해 노력합니다. 국비지원 교육과 몇몇 인강을 들은 후 따라하기만하니 실력이 늘지 않는 다는것을 깨닫고 혼자
+          고민하고 공부하고 있습니다. 강의를 통해 꾸준히 배우며 스스로 기본기를 탄탄히 하기 위해 복습하고 배운 기술들을 활용 할 수 있는 방법에 대해 꾸준히 고민중 입니다.
         </p>
+        <p>
+          HTML, CSS, JAVASCRIPT =중
+          <!-- 따로꾸미기 h4로 나누자 js써서 나와야함 애니메이션 에정          -->
+          기술에 대한 개념을 알고 사용 할 줄 압니다. 좀 더 정확하고 기본을 다지기 위해 항상 공부하며 가장 자신있는 스킬들 입니다. html은 좀 더 공부하고 적고 css는 bootstrap 쓸 줄 알지만 스스로 만드는
+          편, 신기술을들 익히려 항상 노력중 js는 ES6신문법 이야기하고 뭐 제이쿼리가 편해서 주로 쓰지만 바닐라JS도 알고
+        </p>
+        <p>REACT, VUE.JS = 하 기술에 대한 개념을 알고 사용 할 줄 알지만, 인터넷을 통한 검색이 많이 필요한 단계입니다.</p>
+        <p>TS = 하</p>
+        <p>GIT, GITHUB 를 이용하여 소스 공유</p>
       </div>
       <div class="skills-icons">
         <div class="skills-main skills-hcj">
@@ -93,7 +101,10 @@
       <!-- 해머쓰자, 슬라이드 버튼도 밑에 따로 만들고
       작업물 클릭시 자세한 내용 팝업창으로 띄우고
     들어가야할 내용 작업물 제목, 내용, 코드 깃주소, 데모 주소,  -->
+      일단 생각해둔거 만들기 1. 가게 메뉴판 웹앱 2. 가상 쇼핑몰 만들기 3. 실제 사용가능 프로젝트 하나 만들어서 배포 4.
     </div>
-    <div class="contect-container"></div>
+    <div class="contect-container">연락처, 이메일, 블로그</div>
+    <footer>맨밑에 그거 문구</footer>
+    <script src="main.js"></script>
   </body>
 </html>
