@@ -19,6 +19,7 @@ body {
   width: 100%;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 30px;
+  border-radius: 30px;
 }
 .grid-container_nav {
   color: #ffffff;
@@ -37,6 +38,7 @@ body {
   padding: 20px;
   background: var(--g-color);
   text-align: center;
+  border-radius: 30px;
 }
 .main-container div {
   display: block;
@@ -45,14 +47,35 @@ body {
   font-size: 20px;
   color: var(--b-color);
 }
+.skills-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .skills-text {
   width: 50%;
   float: left;
+  background: var(--g-color);
+  border-radius: 30px;
 }
 .skills-icons {
   float: left;
   width: 50%;
+  border-radius: 30px;
+  background: var(--g-color);
+  padding: 30px;
+}
+.skills-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: inherit;
 }
 .skills-icons_option {
-  font-size: 150px;
+  width: 30%;
+  margin: auto;
+}
+.skills-hcj i:first-child {
+  color: orange;
 }
