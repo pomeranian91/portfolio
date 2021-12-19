@@ -1,4 +1,4 @@
-.home-container {
+.home {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -7,7 +7,7 @@
   text-align: center;
   color: var(--b-color);
 }
-.home-container div {
+.home__box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,15 +17,15 @@
   height: 100vh;
 }
 
-.home-hello {
+.home__main {
   background: var(--b-color);
   color: white;
   font-size: 5vw;
 }
-.home-text {
+.home__main2 {
   font-size: 3vw;
 }
-.home-last {
+.home__main3 {
   background: var(--b-color);
   color: white;
   font-size: 4vw;

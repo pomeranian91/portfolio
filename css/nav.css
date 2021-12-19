@@ -5,12 +5,12 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 30px;
 }
-.grid-container_nav {
+.grid-container__nav {
   color: #ffffff;
   text-align: center;
   cursor: pointer;
 }
-.grid-container_nav:hover {
+.grid-container__nav:hover {
   color: var(--wy-color);
   transition: 0.5s;
 }

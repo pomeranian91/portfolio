@@ -29,38 +29,37 @@
   <body>
     <div class="grid-container">
       <div></div>
-      <div class="grid-container_nav">HOME</div>
+      <div class="grid-container__nav">HOME</div>
       <div></div>
-      <div class="grid-container_nav">SKILLS</div>
+      <div class="grid-container__nav">SKILLS</div>
       <div></div>
-      <div class="grid-container_nav">PROJECT</div>
+      <div class="grid-container__nav">PROJECT</div>
       <div></div>
-      <div class="grid-container_nav">CONTECT</div>
+      <div class="grid-container__nav">CONTECT</div>
       <div></div>
     </div>
-    <div class="home-container">
-      <!-- 클래스명 BEM 적용하기  -->
-      <div class="home-box home-hello">
-        <span class="home-hello_text_first">안녕하세요</span>
-        <span class="home-hello_text_second">FRONT-END 개발자가 되기 위해</span>
-        <span class="home-hello_text_third">노력하는 조용우 입니다.</span>
+    <div class="home">
+      <div class="home__box home__main">
+        <span class="home__main--text1">안녕하세요</span>
+        <span class="home__main--text2">FRONT-END 개발자가 되기 위해</span>
+        <span class="home__main--text3">노력하는 조용우 입니다.</span>
       </div>
-      <div class="home-box home-text">
+      <div class="home__box home__main2">
         <span>항상 생각했습니다.</span>
         <span>지금이라도 시작해야 할까? 늦지 않았을까?</span>
         <span>이런 고민만 하며 후회 한지 몇 년이 지나</span>
         <span>고민이 아닌 행동을 하고 있습니다.</span>
       </div>
-      <div class="home-box home-last">
+      <div class="home__box home__main3">
         <span>남들보다 시작은 늦었지만</span>
         <span>전문가가 되기 위해 노력하겠습니다.</span>
       </div>
     </div>
-    <div class="skills-container">
+    <div class="skills">
       <!-- 큰 이미지? 노 디브박스안에 아이콘 박아넣고
       스크롤 위치에 따라 opacity로 나눠 설명
     옆에 멘트도 변경가능 해야함 js써야겠네  -->
-      <div class="skills-text">
+      <div class="skills__text">
         처음엔 이미지 꽉차게 한후 스크롤 내려가면 변하도록
         <p>
           다양한 기술들을 구사할 수 있는 능력도 중요하지만 각각의 기술들을 저 정확히 알기 위해 노력합니다. 국비지원 교육과 몇몇 인강을 들은 후 따라하기만하니 실력이 늘지 않는 다는것을 깨닫고 혼자
@@ -75,28 +74,26 @@
         <p>nodejs 하 기본 강의만 들은것</p>
         <p>GIT, GITHUB 를 이용하여 소스 공유</p>
       </div>
-      <div class="skills-icons">
-        <div style="text-align: center">Skills</div>
-        <div class="skills-main skills-hcj">
-          <img class="skills-icons_option" src="img/html-icon.svg" />
-          <img class="skills-icons_option" src="img/css-icon.svg" />
-          <img class="skills-icons_option" src="img/js-icon.svg" />
+      <div class="skills__icons">
+        <div class="skills__icons--box skills__icons--hcj">
+          <img class="skills__icons--option" src="img/html-icon.svg" />
+          <img class="skills__icons--option" src="img/css-icon.svg" />
+          <img class="skills__icons--option" src="img/js-icon.svg" />
         </div>
-        <div class="skills-main skills-rvn">
-          <img class="skills-icons_option" src="img/react-icon.svg" />
-          <img class="skills-icons_option" src="img/vue-icon.svg" />
-          <img class="skills-icons_option" src="img/node-icon.svg" />
+        <div class="skills__icons--box skills__icons--rvn">
+          <img class="skills__icons--option" src="img/react-icon.svg" />
+          <img class="skills__icons--option" src="img/vue-icon.svg" />
+          <img class="skills__icons--option" src="img/node-icon.svg" />
         </div>
-        <div class="skills-main skills-git">
-          <img href="img/file_type_typescript_official_icon_130107.ico" />
+        <div class="skills__icons--box skills__icons--ts">
+          <img class="skills__icons--option" href="img/file_type_typescript_official_icon_130107.ico" />
         </div>
-        <div class="skills-main skills-git">
-          <img class="skills-icons_option" src="img/ts-icon.svg" />
-          <img class="skills-icons_option" src="img/git-icon.svg" />
-          <img class="skills-icons_option" src="img/github-icon.svg" />
+        <div class="skills__icons--box skills__icons--git">
+          <img class="skills__icons--option" src="img/ts-icon.svg" />
+          <img class="skills__icons--option" src="img/git-icon.svg" />
+          <img class="skills__icons--option" src="img/github-icon.svg" />
         </div>
       </div>
-      <div style="clear: both"></div>
     </div>
     <div class="project-container">
       <!-- 해머쓰자, 슬라이드 버튼도 밑에 따로 만들고

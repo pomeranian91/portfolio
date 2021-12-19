@@ -1,27 +1,26 @@
-.skills-container {
+.skills {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: inherit;
 }
-.skills-text {
+.skills__text {
   width: 40%;
   background: blue;
 }
-.skills-icons {
+.skills__icons {
   width: 40%;
   background: blueviolet;
   padding: 30px;
   border: 1px solid black;
 }
-.skills-main {
+.skills__icons--box {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   overflow: inherit;
 }
-.skills-icons_option {
+.skills__icons--option {
   width: 25%;
   margin: auto;
 }
