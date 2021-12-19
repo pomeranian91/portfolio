@@ -1,3 +1,5 @@
+$('.home-hello_text_second:contains("FRONT-END")').css('color','var(--y-color)');
+
 $(window).scroll(function(){
     var scrollHeight = $(window).scrollTop();
     console.log(scrollHeight);
@@ -23,16 +25,16 @@ window.addEventListener('load',function(){
     for(let i = 0; i < homeText.length; i++){
     setTimeout(function(){
         homeTyping.innerHTML = homeTyping.innerHTML + homeText[i]
-    }, i*100);
+    }, i*80);
 };
     for(let i = 0; i < homeTextSecond.length; i++){
     setTimeout(function(){
         homeTypingSecond.innerHTML = homeTypingSecond.innerHTML + homeTextSecond[i]
-    }, (i+homeText.length)*100);
+    }, (i+homeText.length)*80);
 };
     for(let i = 0; i < homeTextThird.length; i++){
     setTimeout(function(){
         homeTypingThird.innerHTML = homeTypingThird.innerHTML + homeTextThird[i]
-    }, (i+homeText.length+homeTextSecond.length)*100);
+    }, (i+homeText.length+homeTextSecond.length)*80);
 };
 });
