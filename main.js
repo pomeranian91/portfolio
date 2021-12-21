@@ -54,4 +54,4 @@ $('.skills__btn--left').click(function(){
     nowskills = nowskills - 1;
     }
 });
-//스킬 슬라이드
+//스킬 슬라이드, 터치 넣을까 말까 흠
