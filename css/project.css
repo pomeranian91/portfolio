@@ -1,0 +1,12 @@
+.project__container {
+  margin-top: 200px;
+}
+.project__box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.project__img--test {
+  width: 1000px;
+  height: 500px;
+}
