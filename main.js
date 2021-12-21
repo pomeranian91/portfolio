@@ -1,3 +1,10 @@
+$('.nav__skills').click(function(){
+    document.querySelector('.skills__head').scrollIntoView(true);
+});
+$('.nav__project').click(function(){
+    document.querySelector('.project__head').scrollIntoView(true);
+});
+
 $('.home__main--text2:contains("FRONT-END")').css('color','var(--y-color)');
 
 $(window).scroll(function(){
@@ -55,3 +62,4 @@ $('.skills__btn--left').click(function(){
     }
 });
 //스킬 슬라이드, 터치 넣을까 말까 흠
+

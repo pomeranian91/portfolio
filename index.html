@@ -31,9 +31,9 @@
       <div></div>
       <div class="grid-container__nav">HOME</div>
       <div></div>
-      <div class="grid-container__nav">SKILLS</div>
+      <div class="grid-container__nav nav__skills">SKILLS</div>
       <div></div>
-      <div class="grid-container__nav">PROJECT</div>
+      <div class="grid-container__nav nav__project">PROJECTS</div>
       <div></div>
       <div class="grid-container__nav">CONTECT</div>
       <div></div>
@@ -55,7 +55,7 @@
         <span>전문가가 되기 위해 노력하겠습니다.</span>
       </div>
     </div>
-    <h1 style="text-align: center; margin-top: 50px">Skills</h1>
+    <h1 class="skills__head">Skills</h1>
     <div style="overflow: hidden;">
     <div class="skills">
         <div class="skills__container">
@@ -198,72 +198,51 @@
       </div>
       
 
-      <!-- <div class="skills__text--box">
-      
-        <div class="skills__text skills__text--main">
-          <p>다양한 기술들을 구사할 수 있는 능력도 중요하지만 각각의 기술들을 저 정확히 알고 사용할 수 있기 위해 노력합니다.</p>
-          <p>국비지원 교육과 몇몇 인강을 들은 후 따라하기만하니 실력이 늘지 않는 다는것을 깨닫고 스스로 고민하고 작업물을 만드는 등 실천하고 있습니다.</p>
-          <p>강의를 통해 꾸준히 배우며 스스로 기본기를 탄탄히 하기 위해 복습하고 배운 기술들을 활용 할 수 있는 방법에 대해 꾸준히 고민중 입니다.</p>
-        </div>
-        <div class="skills__text skills__text--hcj">
-          <h2>HTML5, CSS3, JAVASCRIPT <중></h2>
-          <p>-HTML과 CSS, JAVASCRIPT를 이해하고 사용할 수 있습니다</p>
-          <p>-표준 HTML을 사용할 줄 알며, CSS를 이용하여 레이아웃, 애니메이션 등 다양한 작업을 할 수 있습니다</p>
-          <p>-Bootstrap과 Sass의 사용법은 알지만 잘 사용하고 있지 않습니다</p>
-          <p>-JAVASCRIPT는 Vanilajs와 jquery 둘 다 사용가능하며 꾸준히 배우고 기술을 사용하기 위해 작업물을 만들고 있습니다</p>
-          <p>-ES6 신문법에 대해 공부중이며, 관리에 용이한 코드를 만들기 위해 클린코드 등에 대하여 공부 중입니다</p>
-        </div>
-
-        <div class="skills__text skills__text--rvn">
-          <h2>REACT <중하>, VUE.JS, Node.js <하></h2>
-          <p>-주로 사용하는 Framework는 React 입니다</p>
-          <p>-React를 이용해 웹 앱을 만들 수 있습니다</p>
-          <p>-Vue.js에 대한 강의를 들었으나 사용을 위해선 많은 검색을 필요로 합니다</p>
-          <p>-Node.js에 대한 강의를 들었으나 사용을 위해선 많은 검색을 필요로 합니다</p>
-        </div>
-        <div class="skills__text skills__text--ts">
-          <h2>TypeScript <하></h2>
-          <p>학습중이나 잘 사용하지 못합니다</p>
-        </div>
-        <div class="skills__text skills__text--git">
-          <h2>GIT, GITHUB</h2>
-          <p>git을 이용하여 버전을 관리 할 수 있으며 brunch에 대한 개념을 알고 있습니다</p>
-          <p>터미널과 github desktop을 이용하여 commit을 할 수 있으며 원하는 brunch에 저장 할 수 있습니다</p>
-          <p>개인프로젝트가 아니라면 함부로 git push origin main 이란 말을 쓰지 않습니다</p>
-        </div>
-      </div>
-      <div class="skills__icons">
-        <div class="skills__icons--box skills__icons--hcj">
-          <img class="skills__icons--option" src="img/html-icon.svg" />
-          <img class="skills__icons--option" src="img/css-icon.svg" />
-          <img class="skills__icons--option" src="img/js-icon.svg" />
-        </div>
-        <div class="skills__icons--box skills__icons--rvn">
-          <img class="skills__icons--option" src="img/react-icon.svg" />
-          <img class="skills__icons--option" src="img/vue-icon.svg" />
-          <img class="skills__icons--option" src="img/node-icon.svg" />
-        </div>
-        <div class="skills__icons--box skills__icons--ts">
-          <img class="skills__icons--option" href="img/file_type_typescript_official_icon_130107.ico" />
-        </div>
-        <div class="skills__icons--box skills__icons--git">
-          <img class="skills__icons--option" src="img/ts-icon.svg" />
-          <img class="skills__icons--option" src="img/git-icon.svg" />
-          <img class="skills__icons--option" src="img/github-icon.svg" />
-        </div>
-      </div> -->
     </div>
-    <div class="project__container">
-      <div class="project__box">
-        <div class="project__img">
-          <img class="project__img--test" src="img/mypome.ico" alt="작업물1" />
-          <div class="project__text">작업물1</div>
+    <h1 class="project__head">Projects</h1>
+    <div class="project">
+      <div class="project__container">
+        <div class="project__card">
+          <img src="img/mypome.ico">
+          <div class="project__box">
+            <div class="project__box--title">
+            작업물 제목 가게 메뉴판 웹앱 하나
+            </div>
+            <div class="project__box--text">
+              작업물 내용 , 사용언어, 깃주소, 데모 주소
+            </div>
+            <button class="project__btn">더보기</button>
+          </div>
         </div>
-      </div>
-      <!-- 해머쓰자, 슬라이드 버튼도 밑에 따로 만들고
-      작업물 클릭시 자세한 내용 팝업창으로 띄우고
-    들어가야할 내용 작업물 제목, 내용, 코드 깃주소, 데모 주소,  -->
-      <!-- 일단 생각해둔거 만들기 1. 가게 메뉴판 웹앱 2. 가상 쇼핑몰 만들기 3. 실제 사용가능 프로젝트 하나 만들어서 배포 4. -->
+        <div class="project__card">
+          <img src="img/mypome.ico">
+          <div class="project__box">
+            <div class="project__box--title">
+            제목 CSS애니메이션 사이트 하나
+            </div>
+            <div class="project__box--text">
+              내용들 우르르와르르
+            </div>
+            <button class="project__btn">더보기</button>
+          </div>
+        </div>
+        <div class="project__card">
+          <img src="img/mypome.ico">
+          <div class="project__box">
+            <div class="project__box--title">
+            제목 그 크리스마스 카드마냥 뭐 카카오 api이용해서 하면 될 듯
+            </div>
+            <div class="project__box--text">
+              내용들 우르르와르르
+            </div>
+            <button class="project__btn">더보기 버튼 누르면 팝업 똭 뜨고 암때나 눌러도 딱 나가지고</button>
+          </div>
+        </div>
+        
+          </div>
+            </div>
+      
+     
     </div>
     <div class="contect-container">연락처, 이메일, 블로그</div>
     <footer style="text-align: center; color: white; background: black">맨밑에 그거 문구</footer>
