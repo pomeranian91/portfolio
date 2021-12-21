@@ -42,7 +42,7 @@ window.addEventListener('load',function(){
 //타이핑 효과
 var nowskills = 1;
 $('.skills__btn--right').click(function(){ 
-   if(nowskills < 4){
+   if(nowskills < 5){
     $('.skills').css('transform','translateX(-' + nowskills + '00vw)');
        nowskills = nowskills + 1;
     } 
