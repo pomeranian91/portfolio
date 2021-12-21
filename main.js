@@ -40,6 +40,18 @@ window.addEventListener('load',function(){
 };
 });
 //타이핑 효과
+var nowskills = 1;
+$('.skills__btn--right').click(function(){ 
+   if(nowskills < 4){
+    $('.skills').css('transform','translateX(-' + nowskills + '00vw)');
+       nowskills = nowskills + 1;
+    } 
+});
 
-
-//스크롤 위치에 따른 자연스럽게 사라지는 효과__스킬 sticky에 사용
+$('.skills__btn--left').click(function(){
+    if(nowskills > 1){
+        $('.skills').css('transform','translateX(-' + (nowskills-2) + '00vw)');
+    nowskills = nowskills - 1;
+    }
+});
+//스킬 슬라이드
