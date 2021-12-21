@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
+  width: 100vw;
   margin-top: 200px;
 }
 .skills__text--box {
@@ -29,7 +29,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-size: 24px;
+  font-size: 3vh;
 
   margin-bottom: 600px;
 }
@@ -43,4 +43,7 @@
 .skills__icons--option {
   width: 30%;
   margin: auto;
+}
+.skills__text--main {
+  font-size: 32px;
 }
