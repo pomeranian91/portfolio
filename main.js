@@ -4,6 +4,20 @@ $('.nav__skills').click(function(){
 $('.nav__project').click(function(){
     document.querySelector('.project__head').scrollIntoView(true);
 });
+//nav버튼 클릭 이동
+
+$(window).scroll(function(){
+if($(this).scrollTop() > 500){
+    $('.goHome').fadeIn('fast');
+} else{
+    $('.goHome').fadeOut('fast');
+}
+});
+$('.goHome').click(function(){
+    $('html, body').animate({scrollTop: 0},500);
+});
+//홈으로 버튼
+
 
 $('.home__main--text2:contains("FRONT-END")').css('color','var(--y-color)');
 
