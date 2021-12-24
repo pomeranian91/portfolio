@@ -25,11 +25,14 @@
 }
 .skills__text {
   display: flex;
+  justify-content: center;
+  align-items: flex-start;
   flex-direction: column;
   font-size: 1vw;
-  width: 50%;
   margin-left: 200px;
+  width: 50%;
 }
+
 .skills__icons--box {
   display: flex;
   justify-content: center;
