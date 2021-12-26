@@ -1,6 +1,7 @@
 .project__head {
   text-align: center;
   margin-top: 200px;
+  font-size: 100px;
 }
 .project {
   display: flex;
@@ -24,9 +25,21 @@
   border-radius: 5px;
   border: none;
   background: var(--y-color);
+  margin: 0px 10px;
 }
 .project__btn a {
   text-decoration: none;
+}
+.project__btn a:link {
+  color: var(--b-color);
+}
+.project__btn a:visited {
+  color: var(--b-color);
+}
+.project__btn a:hover {
+  animation-name: btncolor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 .project__portflio--img {
   width: 380px;
@@ -38,6 +51,24 @@
   text-align: center;
 }
 .project__box--text {
-  margin-bottom: 15px;
   font-size: 24px;
+  text-align: center;
+}
+.project__box__btn {
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes btncolor {
+  0% {
+    color: var(--b-color);
+  }
+
+  50% {
+    color: #dcdcdc;
+  }
+
+  100% {
+    color: var(--b-color);
+  }
 }

@@ -21,7 +21,7 @@
     <link href="css/home.css" rel="stylesheet" />
     <link href="css/skills.css" rel="stylesheet" />
     <link href="css/project.css" rel="stylesheet" />
-    <link href="css/content.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/5e072e4251.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Yong's Portfolio</title>
@@ -35,7 +35,7 @@
       <div></div>
       <div class="grid-container__nav nav__project">PROJECTS</div>
       <div></div>
-      <div class="grid-container__nav">CONTECT</div>
+      <div class="grid-container__nav">CONTACT</div>
       <div></div>
     </div>
     <div class="goHome">
@@ -48,8 +48,9 @@
         <span class="home__main--text2">FRONT-END 개발자가 되기 위해</span>
         <span class="home__main--text3">노력하는 조용우 입니다.</span>
       </div>
-      <div style="position: relative;">
-        <div style="position: absolute; top:-100px; width: 100px; font-size: 18px; color: white; opacity: 0.5; ">아래로 스크롤 해주세요↓</div>
+      <div class="plzscroll__box" >
+        <div class="plzscroll__text">
+          <img src="img/mousescroll.png/"> 아래로 스크롤 해주세요↓</div>
       </div>
       
       <div class="home__box home__main2">
@@ -217,11 +218,15 @@
               Web portfolio<hr/>
             </div>
             <div class="project__box--text">
-              html, css, javascript 사용
+              <p>포트폴리오 웹 사이트입니다</p>
+              <p>HTML, CSS, JavaScript를 사용했습니다</p>
             </div>
-            <button class="project__btn"><a href="https://github.com/pomeranian91/portfolio.git">Github</a></button>
-            <button class="project__btn"><a href="https://pomeranian91.github.io/portfolio/">DemoPage</a></button>
-        
+            <div class="project__box__btn">
+              <div></div>
+              <button class="project__btn"><a href="https://github.com/pomeranian91/portfolio.git">Github</a></button>
+              <button class="project__btn"><a href="https://pomeranian91.github.io/portfolio/">DemoPage</a></button>
+              <div></div>
+            </div>
           </div>
         </div>
         <div class="project__card">
@@ -254,8 +259,16 @@
       
      
     </div>
-    <div class="contect-container">연락처, 이메일, 블로그</div>
-    <footer style="text-align: center; color: white; background: black">맨밑에 그거 문구</footer>
+    <div class="contact__container">
+      <div class="contact__title">CONTACT</div>
+      <div class="contact__box">
+        <div class="mobileNum"><i class="fas fa-mobile-alt fa-3x m-3"></i></div>
+        <div class="emailadress"><i class="far fa-envelope fa-3x m-3"></i></div>
+        <div class="gitadress"><i class="fab fa-github fa-3x m-3"></i></div>
+      </div>
+      <div class="contact__text ">내용</div>
+    </div>
+    <footer style="font-size:12px; background:var(--b-color); color:white; text-align: center; ">©2021.CHOYONGWOO All rights reserved.</footer>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
       integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
