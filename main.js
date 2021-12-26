@@ -84,7 +84,7 @@ $(".skills__btn--left").click(function () {
 //연락처 아이콘 연동
 let mobile = '010-9128-6689'
 let email = 'forking91@gmail.com'
-let gitad = 'https://github.com/pomeranian91/portfolio.git'
+let gitad = 'https://github.com/pomeranian91'
 $('.mobileNum').click(function(){
   if($('.contact__text').css('display') == "none"){
     $('.contact__text').show();
