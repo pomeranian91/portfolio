@@ -1,3 +1,4 @@
+AOS.init();
 //nav버튼 클릭 이동
 $(".nav__skills").click(function () {
   document.querySelector(".skills__head").scrollIntoView(true);
@@ -21,7 +22,7 @@ $(".goHome").click(function () {
 
 $('.home__main--text2:contains("FRONT-END")').css("color", "var(--y-color)");
 
-//스크롤 위치에 따른 자연스럽게 사라지는 효과
+//스크롤 위치에 따른 자연스럽게 사라지는 효과, 모바일 계산 다시해야함
 $(window).scroll(function () {
   var scrollHeight = $(window).scrollTop();
   console.log(scrollHeight);
@@ -62,7 +63,8 @@ window.addEventListener("load", function () {
   }
 });
 
-//스킬 슬라이드, 터치
+//스킬 슬라이드
+
 var nowskills = 1;
 $(".skills__btn--right").click(function () {
   if (nowskills < 5) {
@@ -77,6 +79,7 @@ $(".skills__btn--left").click(function () {
     nowskills = nowskills - 1;
   }
 });
+
 
 //연락처 아이콘 연동
 let mobile = '010-9128-6689'

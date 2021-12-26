@@ -15,13 +15,15 @@
       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
       crossorigin="anonymous"
     />
-
     <link href="css/main.css" rel="stylesheet" />
     <link href="css/nav.css" rel="stylesheet" />
     <link href="css/home.css" rel="stylesheet" />
     <link href="css/skills.css" rel="stylesheet" />
     <link href="css/project.css" rel="stylesheet" />
     <link href="css/contact.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- aos,fontawesome,jquery -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/5e072e4251.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Yong's Portfolio</title>
@@ -48,9 +50,11 @@
         <span class="home__main--text2">FRONT-END 개발자가 되기 위해</span>
         <span class="home__main--text3">노력하는 조용우 입니다.</span>
       </div>
-      <div class="plzscroll__box" >
-        <div class="plzscroll__text">
-          <img src="img/mousescroll.png/"> 아래로 스크롤 해주세요↓</div>
+      <div class="plzscroll__container">
+        <div class="plzscroll__box">
+          <div class="plzscroll__ico"></div>
+          <div class="plzscroll__text">SCROLL</div>
+        </div>
       </div>
       
       <div class="home__box home__main2">
@@ -66,7 +70,7 @@
     </div>
     <h1 class="skills__head">Skills</h1>
     <div style="overflow: hidden;">
-    <div class="skills">
+    <div data-aos="fade-up" data-aos-duration="2000" class="skills">
         <div class="skills__container">
           <div class="skills__text skills__text--main">
             <h2>눈 감고 칠 정도로 잘하지 않습니다</h2>
@@ -96,7 +100,7 @@
             </div>
           </div>
         </div>
-        <div class=" skills__container">
+        <div class="skills__container">
           <div class="skills__text">
             <h2>HTML5, CSS3, JAVASCRIPT <중></h2>
             <p>-HTML과 CSS, JAVASCRIPT를 이해하고 사용할 수 있습니다</p>
@@ -210,8 +214,8 @@
     </div>
     <h1 class="project__head">Projects</h1>
     <div class="project">
-      <div class="project__container">
-        <div class="project__card">
+      <div data-aos="fade-up" data-aos-duration="3000" class="project__container">
+        <div  class="project__card">
           <img class="project__portflio--img" src="img/potmain.png">
           <div class="project__box">
             <div class="project__box--title">
@@ -269,12 +273,6 @@
       <div class="contact__text ">내용</div>
     </div>
     <footer style="font-size:12px; background:var(--b-color); color:white; text-align: center; ">©2021.CHOYONGWOO All rights reserved.</footer>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"
-      integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
     <script src="main.js"></script>
   </body>
 </html>
