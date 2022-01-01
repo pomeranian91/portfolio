@@ -9,9 +9,12 @@
   color: #ffffff;
   text-align: center;
   cursor: pointer;
+  margin-top: 5px;
 }
 .grid-container__nav:hover {
-  color: var(--wy-color);
+  color: var(--b-color);
+  background-color: var(--wy-color);
+  border-radius: 20px;
   transition: 0.5s;
 }
 

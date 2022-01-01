@@ -20,7 +20,7 @@ $(".goHome").click(function () {
 });
 
 
-$('.home__main--text2:contains("FRONT-END")').css("color", "var(--y-color)");
+
 
 //스크롤 위치에 따른 자연스럽게 사라지는 효과, 모바일 계산 다시해야함
 $(window).scroll(function () {

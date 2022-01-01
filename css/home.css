@@ -23,12 +23,49 @@
   background: var(--b-color);
   color: white;
   font-size: 5vw;
+  letter-spacing: 3px;
 }
 .home__main2 {
-  font-size: 3vw;
+  font-size: 4vw;
+  letter-spacing: 3px;
 }
 .home__main3 {
   background: var(--b-color);
   color: white;
   font-size: 4vw;
+}
+.home__main--text2 {
+  background: url("/img/stripedback.jpg");
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: hometextstrited 7s linear infinite;
+}
+
+.home__main3--wave {
+  background: url("/img/wave.svg") repeat-x;
+  z-index: 5;
+  color: transparent;
+  width: 100%;
+  height: 300px;
+  position: absolute;
+  bottom: -50px;
+  animation: homewave 10s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+}
+
+@keyframes hometextstrited {
+  from {
+    background-position: 0% 50%;
+  }
+  to {
+    background-position: 10% 50% 0%;
+  }
+}
+@keyframes homewave {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: -1600px;
+  }
 }
