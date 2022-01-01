@@ -35,7 +35,7 @@
   font-size: 4vw;
 }
 .home__main--text2 {
-  background: url("/img/stripedback.jpg");
+  background: url("./img/stripedback.jpg");
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -49,7 +49,7 @@
 }
 
 .home__main3--wave {
-  background: url("/img/wave.svg") repeat-x;
+  background: url("./img/wave.svg") repeat-x;
   z-index: 5;
   color: transparent;
   width: 100%;
