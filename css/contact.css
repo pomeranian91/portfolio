@@ -16,6 +16,7 @@
 .contact__box {
   display: flex;
   justify-content: center;
+  cursor: pointer;
 }
 .contact__text {
   display: none;
