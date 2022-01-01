@@ -38,7 +38,13 @@
   background: url("/img/stripedback.jpg");
   background-clip: text;
   -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;
+  -o-background-clip: text;
   -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  -o-text-fill-color: transparent;
+  -ms-text-fill-color: transparent;
   animation: hometextstrited 7s linear infinite;
 }
 
