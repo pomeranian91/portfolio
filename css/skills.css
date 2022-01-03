@@ -65,10 +65,10 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 800px;
+    height: 500px;
   }
   .skills__icons {
-    display: flex;
+    display: none;
     margin: 0;
   }
   .skills__text {

@@ -6,6 +6,9 @@ $(".nav__skills").click(function () {
 $(".nav__project").click(function () {
   document.querySelector(".project__head").scrollIntoView(true);
 });
+$('.nav__contact').click(function(){
+  document.querySelector(".contact__head").scrollIntoView(true);
+});
 
 //홈으로 버튼
 $(window).scroll(function () {
