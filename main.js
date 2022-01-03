@@ -70,7 +70,7 @@ window.addEventListener("load", function () {
 
 var nowskills = 1;
 $(".skills__btn--right").click(function () {
-  if (nowskills < 5) {
+  if (nowskills < 7) {
     $(".skills").css("transform", "translateX(-" + nowskills + "00vw)");
     nowskills = nowskills + 1;
   }
@@ -83,6 +83,19 @@ $(".skills__btn--left").click(function () {
   }
 });
 
+// 프로젝트버튼링크
+$('.project__portfolio--git').click(function(){
+  window.open('https://github.com/pomeranian91/portfolio.git');
+});
+$('.project__portfolio--page').click(function(){
+  window.open('https://pomeranian91.github.io/portfolio/');
+});
+$('.project__aninotepad--git').click(function(){
+  window.open('https://github.com/pomeranian91/ani_notepad.git');
+});
+$('.project__aninotepad--page').click(function(){
+  window.open('https://pomeranian91.github.io/ani_notepad/');
+});
 
 //연락처 아이콘 연동
 let mobile = '010-9128-6689'
@@ -119,5 +132,18 @@ $('.gitadress').click(function(){
     $('.contact__text').html(gitad);
   } else {
     $('.contact__text').hide();
+  }
+});
+
+// 연락처 클릭 링크 이동
+$('.contact__text').click(function(){
+  if($('.contact__text').html() == email){
+    window.open('mailto:forking91@gmail.com');
+  }
+});
+
+$('.contact__text').click(function(){
+  if($('.contact__text').html() == gitad){
+    window.open('https://github.com/pomeranian91');
   }
 });

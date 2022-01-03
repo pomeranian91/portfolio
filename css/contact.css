@@ -21,3 +21,7 @@
 .contact__text {
   display: none;
 }
+.contact__text {
+  cursor: pointer;
+  color: var(--y-color);
+}
