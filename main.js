@@ -101,12 +101,13 @@ $('.project__aninotepad--page').click(function(){
 let mobile = '010-9128-6689'
 let email = 'forking91@gmail.com'
 let gitad = 'https://github.com/pomeranian91'
+let blog = 'https://velog.io/@pomeranian91'
 $('.mobileNum').click(function(){
   if($('.contact__text').css('display') == "none"){
     $('.contact__text').show();
     $('.contact__text').html(mobile);
   }
-  else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == email|| $('.contact__text').html() == gitad){
+  else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == email|| $('.contact__text').html() == gitad||$('.contact__text').html() == blog){
     $('.contact__text').html(mobile);
   } else {
     $('.contact__text').hide();
@@ -117,7 +118,7 @@ $('.emailadress').click(function(){
   if($('.contact__text').css('display') == "none"){
     $('.contact__text').show();
     $('.contact__text').html(email);
-  } else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == mobile || $('.contact__text').html() == gitad){
+  } else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == mobile || $('.contact__text').html() == gitad||$('.contact__text').html() == blog){
     $('.contact__text').html(email);
   } else{
     $('.contact__text').hide();
@@ -128,8 +129,19 @@ $('.gitadress').click(function(){
   if($('.contact__text').css('display') == "none"){
     $('.contact__text').show();
     $('.contact__text').html(gitad);
-  } else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == mobile|| $('.contact__text').html() == email){
+  } else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == mobile|| $('.contact__text').html() == email||$('.contact__text').html() == blog){
     $('.contact__text').html(gitad);
+  } else {
+    $('.contact__text').hide();
+  }
+});
+
+$('.blogadress').click(function(){
+  if($('.contact__text').css('display') == "none"){
+    $('.contact__text').show();
+    $('.contact__text').html(blog);
+  } else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == mobile|| $('.contact__text').html() == email||$('.contact__text').html() == gitad){
+    $('.contact__text').html(blog);
   } else {
     $('.contact__text').hide();
   }
@@ -144,6 +156,11 @@ $('.contact__text').click(function(){
 
 $('.contact__text').click(function(){
   if($('.contact__text').html() == gitad){
-    window.open('https://github.com/pomeranian91');
+    window.open(gitad);
+  }
+});
+$('.contact__text').click(function(){
+  if($('.contact__text').html() == blog){
+    window.open(blog);
   }
 });

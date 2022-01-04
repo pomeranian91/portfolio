@@ -8,6 +8,7 @@
   width: 700vw;
   display: flex;
   transition: transform 1s;
+  font-family: "Noto Sans KR", sans-serif;
 }
 .skills__container {
   display: flex;
@@ -33,6 +34,9 @@
   height: 500px;
   margin-left: 200px;
   width: 50%;
+}
+.skills__text h2 {
+  font-weight: 700;
 }
 
 .skills__icons--box {
