@@ -16,6 +16,7 @@
   align-items: center;
   width: 100vw;
   height: 500px;
+  box-shadow: inset -2px -2px 5px rgb(196, 196, 196);
 }
 .skills__icons {
   display: flex;
@@ -51,8 +52,11 @@
 .skills__btn {
   padding: 20px;
   background: white;
+  border-radius: 50%;
+  box-shadow: inset -2px -2px 5px rgb(196, 196, 196);
   border: none;
   font-size: 30px;
+  margin: 10px 10px;
 }
 .skills__text h2 {
   color: rgb(189, 52, 52);

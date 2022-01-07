@@ -27,23 +27,23 @@ $(".goHome").click(function () {
 
 //스크롤 위치에 따른 자연스럽게 사라지는 효과, 모바일 계산 다시해야함
 $(window).scroll(function () {
-  var scrollHeight = $(window).scrollTop();
+  let scrollHeight = $(window).scrollTop();
   console.log(scrollHeight);
-  var homeY = (-1 / 800) * scrollHeight + 1;
+  let homeY = (-1 / 800) * scrollHeight + 1;
   $(".home__box").eq(0).css("opacity", homeY);
-  var homeY2 = (-1 / 500) * scrollHeight + 3;
+  let homeY2 = (-1 / 500) * scrollHeight + 3;
   $(".home__box").eq(1).css("opacity", homeY2);
-  var homeY3 = (-1 / 500) * scrollHeight + 4.8;
+  let homeY3 = (-1 / 500) * scrollHeight + 4.8;
   $(".home__box").eq(2).css("opacity", homeY3);
 });
 
 //타이핑 효과
-var homeTyping = document.querySelector(".home__main--text1");
-var homeText = document.querySelector(".home__main--text1").innerHTML;
-var homeTypingSecond = document.querySelector(".home__main--text2");
-var homeTextSecond = document.querySelector(".home__main--text2").innerHTML;
-var homeTypingThird = document.querySelector(".home__main--text3");
-var homeTextThird = document.querySelector(".home__main--text3").innerHTML;
+let homeTyping = document.querySelector(".home__main--text1");
+let homeText = document.querySelector(".home__main--text1").innerHTML;
+let homeTypingSecond = document.querySelector(".home__main--text2");
+let homeTextSecond = document.querySelector(".home__main--text2").innerHTML;
+let homeTypingThird = document.querySelector(".home__main--text3");
+let homeTextThird = document.querySelector(".home__main--text3").innerHTML;
 
 window.addEventListener("load", function () {
   homeTyping.innerHTML = "";
@@ -68,7 +68,7 @@ window.addEventListener("load", function () {
 
 //스킬 슬라이드
 
-var nowskills = 1;
+let nowskills = 1;
 $(".skills__btn--right").click(function () {
   if (nowskills < 7) {
     $(".skills").css("transform", "translateX(-" + nowskills + "00vw)");
