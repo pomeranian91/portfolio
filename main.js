@@ -1,13 +1,12 @@
-AOS.init();
 //nav버튼 클릭 이동
-$(".nav__skills").click(function () {
-  document.querySelector(".skills__head").scrollIntoView(true);
+$(".nav_skills").click(function () {
+  document.querySelector(".skills_header").scrollIntoView(true);
 });
-$(".nav__project").click(function () {
-  document.querySelector(".project__head").scrollIntoView(true);
+$(".nav_project").click(function () {
+  document.querySelector(".project_header").scrollIntoView(true);
 });
-$('.nav__contact').click(function(){
-  document.querySelector(".contact__head").scrollIntoView(true);
+$(".nav_contact").click(function () {
+  document.querySelector(".contact_header").scrollIntoView(true);
 });
 
 //홈으로 버튼
@@ -22,30 +21,27 @@ $(".goHome").click(function () {
   $("html, body").animate({ scrollTop: 0 }, 500);
 });
 
-
-
-
 //스크롤 위치에 따른 자연스럽게 사라지는 효과, 모바일 계산 다시해야함
 $(window).scroll(function () {
   let scrollHeight = $(window).scrollTop();
   console.log(scrollHeight);
   let homeY = (-1 / 800) * scrollHeight + 1;
-  $(".home__box").eq(0).css("opacity", homeY);
+  $(".home_box").eq(0).css("opacity", homeY);
   let homeY2 = (-1 / 500) * scrollHeight + 3;
-  $(".home__box").eq(1).css("opacity", homeY2);
+  $(".home_box").eq(1).css("opacity", homeY2);
   let homeY3 = (-1 / 500) * scrollHeight + 4.8;
-  $(".home__box").eq(2).css("opacity", homeY3);
+  $(".home_box").eq(2).css("opacity", homeY3);
 });
 
 //타이핑 효과
-let homeTyping = document.querySelector(".home__main--text1");
-let homeText = document.querySelector(".home__main--text1").innerHTML;
-let homeTypingSecond = document.querySelector(".home__main--text2");
-let homeTextSecond = document.querySelector(".home__main--text2").innerHTML;
-let homeTypingThird = document.querySelector(".home__main--text3");
-let homeTextThird = document.querySelector(".home__main--text3").innerHTML;
 
 window.addEventListener("load", function () {
+  let homeTyping = document.querySelector(".home_main-text1");
+  let homeText = document.querySelector(".home_main-text1").innerHTML;
+  let homeTypingSecond = document.querySelector(".home_main-text2");
+  let homeTextSecond = document.querySelector(".home_main-text2").innerHTML;
+  let homeTypingThird = document.querySelector(".home_main-text3");
+  let homeTextThird = document.querySelector(".home_main-text3").innerHTML;
   homeTyping.innerHTML = "";
   homeTypingSecond.innerHTML = "";
   homeTypingThird.innerHTML = "";
@@ -66,101 +62,83 @@ window.addEventListener("load", function () {
   }
 });
 
-//스킬 슬라이드
-
-let nowskills = 1;
-$(".skills__btn--right").click(function () {
-  if (nowskills < 7) {
-    $(".skills").css("transform", "translateX(-" + nowskills + "00vw)");
-    nowskills = nowskills + 1;
-  }
-});
-
-$(".skills__btn--left").click(function () {
-  if (nowskills > 1) {
-    $(".skills").css("transform", "translateX(-" + (nowskills - 2) + "00vw)");
-    nowskills = nowskills - 1;
-  }
-});
-
 // 프로젝트버튼링크
-$('.project__portfolio--git').click(function(){
-  window.open('https://github.com/pomeranian91/portfolio.git');
+$(".project_portfolio-git").click(function () {
+  window.open("https://github.com/pomeranian91/portfolio.git");
 });
-$('.project__portfolio--page').click(function(){
-  window.open('https://pomeranian91.github.io/portfolio/');
+$(".project_portfolio-page").click(function () {
+  window.open("https://pomeranian91.github.io/portfolio/");
 });
-$('.project__aninotepad--git').click(function(){
-  window.open('https://github.com/pomeranian91/ani_notepad.git');
+$(".project_aninotepad-git").click(function () {
+  window.open("https://github.com/pomeranian91/ani_notepad.git");
 });
-$('.project__aninotepad--page').click(function(){
-  window.open('https://pomeranian91.github.io/ani_notepad/');
+$(".project_aninotepad-page").click(function () {
+  window.open("https://pomeranian91.github.io/ani_notepad/");
 });
 
 //연락처 아이콘 연동
-let mobile = '010-9128-6689'
-let email = 'forking91@gmail.com'
-let gitad = 'https://github.com/pomeranian91'
-let blog = 'https://velog.io/@pomeranian91'
-$('.mobileNum').click(function(){
-  if($('.contact__text').css('display') == "none"){
-    $('.contact__text').show();
-    $('.contact__text').html(mobile);
-  }
-  else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == email|| $('.contact__text').html() == gitad||$('.contact__text').html() == blog){
-    $('.contact__text').html(mobile);
+const mobile = "010-9128-6689";
+const email = "forking91@gmail.com";
+const gitad = "https://github.com/pomeranian91";
+const blog = "https://velog.io/@pomeranian91";
+$(".mobileNum").click(function () {
+  if ($(".contact_text").css("display") == "none") {
+    $(".contact_text").show();
+    $(".contact_text").html(mobile);
+  } else if (($(".contact_text").css("display") == "block" && $(".contact_text").html() == email) || $(".contact_text").html() == gitad || $(".contact_text").html() == blog) {
+    $(".contact_text").html(mobile);
   } else {
-    $('.contact__text').hide();
+    $(".contact_text").hide();
   }
 });
 
-$('.emailadress').click(function(){
-  if($('.contact__text').css('display') == "none"){
-    $('.contact__text').show();
-    $('.contact__text').html(email);
-  } else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == mobile || $('.contact__text').html() == gitad||$('.contact__text').html() == blog){
-    $('.contact__text').html(email);
-  } else{
-    $('.contact__text').hide();
+$(".emailadress").click(function () {
+  if ($(".contact_text").css("display") == "none") {
+    $(".contact_text").show();
+    $(".contact_text").html(email);
+  } else if (($(".contact_text").css("display") == "block" && $(".contact_text").html() == mobile) || $(".contact_text").html() == gitad || $(".contact_text").html() == blog) {
+    $(".contact_text").html(email);
+  } else {
+    $(".contact_text").hide();
   }
 });
 
-$('.gitadress').click(function(){
-  if($('.contact__text').css('display') == "none"){
-    $('.contact__text').show();
-    $('.contact__text').html(gitad);
-  } else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == mobile|| $('.contact__text').html() == email||$('.contact__text').html() == blog){
-    $('.contact__text').html(gitad);
+$(".gitadress").click(function () {
+  if ($(".contact_text").css("display") == "none") {
+    $(".contact_text").show();
+    $(".contact_text").html(gitad);
+  } else if (($(".contact_text").css("display") == "block" && $(".contact_text").html() == mobile) || $(".contact_text").html() == email || $(".contact_text").html() == blog) {
+    $(".contact_text").html(gitad);
   } else {
-    $('.contact__text').hide();
+    $(".contact_text").hide();
   }
 });
 
-$('.blogadress').click(function(){
-  if($('.contact__text').css('display') == "none"){
-    $('.contact__text').show();
-    $('.contact__text').html(blog);
-  } else if($('.contact__text').css('display') == "block" && $('.contact__text').html() == mobile|| $('.contact__text').html() == email||$('.contact__text').html() == gitad){
-    $('.contact__text').html(blog);
+$(".blogadress").click(function () {
+  if ($(".contact_text").css("display") == "none") {
+    $(".contact_text").show();
+    $(".contact_text").html(blog);
+  } else if (($(".contact_text").css("display") == "block" && $(".contact_text").html() == mobile) || $(".contact_text").html() == email || $(".contact_text").html() == gitad) {
+    $(".contact_text").html(blog);
   } else {
-    $('.contact__text').hide();
+    $(".contact_text").hide();
   }
 });
 
 // 연락처 클릭 링크 이동
-$('.contact__text').click(function(){
-  if($('.contact__text').html() == email){
-    window.open('mailto:forking91@gmail.com');
+$(".contact_text").click(function () {
+  if ($(".contact_text").html() == email) {
+    window.open("mailto:forking91@gmail.com");
   }
 });
 
-$('.contact__text').click(function(){
-  if($('.contact__text').html() == gitad){
+$(".contact_text").click(function () {
+  if ($(".contact_text").html() == gitad) {
     window.open(gitad);
   }
 });
-$('.contact__text').click(function(){
-  if($('.contact__text').html() == blog){
+$(".contact_text").click(function () {
+  if ($(".contact_text").html() == blog) {
     window.open(blog);
   }
 });

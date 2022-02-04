@@ -13,7 +13,8 @@
     <!--구글폰트-->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Gothic+Coding&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="shortcut icon" type="image/x-icon" href="../img/mypome.ico" />
     <link
       rel="stylesheet"
@@ -27,316 +28,178 @@
     <link href="css/skills.css" rel="stylesheet" />
     <link href="css/project.css" rel="stylesheet" />
     <link href="css/contact.css" rel="stylesheet" />
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <!-- aos,fontawesome,jquery -->
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- fontawesome,jquery -->
     <script src="https://kit.fontawesome.com/5e072e4251.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <title>Yong's Portfolio</title>
   </head>
   <body>
-    <div class="grid-container">
-      <div></div>
-      <div class="grid-container__nav">HOME</div>
-      <div></div>
-      <div class="grid-container__nav nav__skills">SKILLS</div>
-      <div></div>
-      <div class="grid-container__nav nav__project">PROJECTS</div>
-      <div></div>
-      <div class="grid-container__nav nav__contact">CONTACT</div>
-      <div></div>
-    </div>
     <!-- 네비게이션바 -->
+    <header class="grid-container">
+      <div></div>
+      <div class="grid-container_nav">HOME</div>
+      <div></div>
+      <div class="grid-container_nav nav_skills">SKILLS</div>
+      <div></div>
+      <div class="grid-container_nav nav_project">PROJECTS</div>
+      <div></div>
+      <div class="grid-container_nav nav_contact">CONTACT</div>
+      <div></div>
+    </header>
     <div class="goHome">
       <i class="fas fa-angle-up"></i>
       <div>홈으로</div>
     </div>
+    <!-- 메인내용 -->
     <div class="home">
-      <div class="home__box home__main">
-        <span class="home__main--text1">안녕하세요</span>
-        <span class="home__main--text2">FRONT-END 개발자가 되기 위해</span>
-        <span class="home__main--text3">노력하는 조용우 입니다.</span>
+      <div class="home_box home_main">
+        <span class="home_main-text1">안녕하세요</span>
+        <span class="home_main-text2">FRONT-END 개발자가 되기 위해</span>
+        <span class="home_main-text3">노력하는 조용우 입니다.</span>
       </div>
-      <div class="plzscroll__container">
-        <div class="plzscroll__box">
-          <div class="plzscroll__ico"></div>
-          <div class="plzscroll__text">SCROLL</div>
+      <div class="plzscroll_container">
+        <div class="plzscroll_box">
+          <div class="plzscroll_ico"></div>
+          <div class="plzscroll_text">SCROLL</div>
         </div>
       </div>
-      <!-- 메인 내용 -->
-      <div class="home__box home__main2">
-        <span>항상 생각했습니다.</span>
-        <span>지금이라도 시작해야 할까? 늦지 않았을까?</span>
-        <span>이런 고민만 하며 후회 한지 몇 년이 지나</span>
-        <span>고민이 아닌 행동을 하고 있습니다.</span>
-      </div>
-      <div class="home__box home__main3">
-        
-          <span>남들보다 시작은 늦었지만</span>
-          <span>전문가가 되기 위해 노력하겠습니다.</span>
-          <div class="home__main3--wave">1</div>
+      <div class="home_box">
+        <div class="home_main2">
+          <div class="home_main2_text">
+            <h3>About Me</h3>
+            <h2>"코딩을 하는 것과 배우는 것이 너무 즐겁습니다"</h2>
+            <div>
+              웹이나 앱을 만드는 것에 큰 흥미가 있었던 저는 노마드코더와 스파르타 코딩클럽 국비 교육으로 코딩에 입문했습니다. 그 후 애플코딩 등의 강의와 책을 읽으며 독학으로 코딩을 발전시켜 나갔으며,
+              협업의 경험을 쌓고 더 발전하기 위해 원티드 프리온보딩 코스에 참여하여 꾸준히 발전하고 있습니다. 새로운 지식과 발상으로 기능을 좀 더 효율적이고 다채롭게 만들기 위해 끊임없이 노력하는
+              프론트엔드 개발자가 되겠습니다.
+            </div>
+          </div>
+          <div class="home_main2_img"><img class="home_mypic" src="./img/macao.jpg"/ alt="내사진"></div>
         </div>
+      </div>
+
+      <div class="home_box home_main3">
+        <span>남들보다 시작은 늦었지만</span>
+        <span>전문가가 되기 위해 노력하겠습니다.</span>
+        <div class="home_main3-wave">1</div>
       </div>
     </div>
+
     <!-- 사용기술 -->
-    <div class="skills__head">Skills</div>
-    <div style="overflow: hidden">
-      <div data-aos="fade-up" data-aos-duration="2000" class="skills">
-        <div class="skills__container">
-          <div class="skills__text skills__text--main">
-            <h2>눈 감고 칠 정도로 잘하지 않습니다</h2>
-            <p>다양한 기술들을 구사할 수 있는 능력도 중요하지만</p>
-            <p>각각의 기술들을 정확히 알고 사용할 수 있기 위해 노력합니다</p>
-            <p>구글에서 검색을 자주 하지만</p>
-            <p>검색했던 내용은 완전히 이해 후</p>
-            <p>다시 검색하지 않게 하려 노력합니다</p>
-          </div>
-          <div class="skills__icons">
-            <div class="skills__icons--box">
-              <img class="skills__icons--option skills--opacity" src="img/html-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/css-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/js-icon.svg" />
-            </div>
-            <div class="skills__icons--box">
-              <img class="skills__icons--option skills--opacity" src="img/react-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/vue-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/node-icon.svg" />
-            </div>
-            <div class="skills__icons--box">
-              <img class="skills__icons--option skills--opacity" src="img/ts-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/git-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/github-icon.svg" />
+    <div class="skills_header">Skills</div>
+    <div class="skills_container">
+      <div>
+        <div class="skills_card">
+          <div class="circle-text">중<br />60%</div>
+          <div class="spinner-box">
+            <div class="html_border circle-border">
+              <div class="circle-core"></div>
             </div>
           </div>
+          <div class="skills_title skills_title_html">HTML5</div>
         </div>
-        <div class="skills__container">
-          <div class="skills__text">
-            <h2>HTML5, CSS3 <중></h2>
-            <p>-표준 HTML 마크업을 지키려 노력합니다</p>
-            <p>-CSS를 이용하여 레이아웃, 애니메이션 등 다양한 작업을 할 수 있습니다</p>
-            <p>-Sass의 nesting, extend, mixin, include에 대해 알지만 잘 사용하지 않습니다</p>
-          </div>
-          <div class="skills__icons">
-            <div class="skills__icons--box">
-              <img class="skills__icons--option skills--opacity" src="img/html-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/css-icon.svg" />
-              <img class="skills__icons--option " src="img/js-icon.svg" />
-            </div>
-            <div class="skills__icons--box">
-              <img class="skills__icons--option " src="img/react-icon.svg" />
-              <img class="skills__icons--option " src="img/vue-icon.svg" />
-              <img class="skills__icons--option " src="img/node-icon.svg" />
-            </div>
-            <div class="skills__icons--box">
-              <img class="skills__icons--option " src="img/ts-icon.svg" />
-              <img class="skills__icons--option " src="img/git-icon.svg" />
-              <img class="skills__icons--option " src="img/github-icon.svg" />
+        <div class="skills_card">
+          <div class="circle-text">중<br />60%</div>
+          <div class="spinner-box">
+            <div class="javascript_border circle-border">
+              <div class="circle-core"></div>
             </div>
           </div>
+          <div class="skills_title skills_title_javascript">JavaScript, jQuery</div>
         </div>
-        <div class="skills__container">
-          <div class="skills__text">
-            <h2>JAVASCRIPT <중></h2>
-            <p>-Vanilajs와 jquery 둘 다 사용 가능합니다</p>
-            <p>-ES6 신문법에 대해 공부 중이며, 관리에 용이한 코드를 만들려 노력합니다</p>
-            <p>-추후 관리에 용이한 코드를 만들기 위해 노력합니다</p>
-            <p></p>
-            <p></p>
-          </div>
-          <div class="skills__icons">
-            <div class="skills__icons--box">
-              <img class="skills__icons--option" src="img/html-icon.svg" />
-              <img class="skills__icons--option" src="img/css-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/js-icon.svg" />
-            </div>
-            <div class="skills__icons--box">
-              <img class="skills__icons--option" src="img/react-icon.svg" />
-              <img class="skills__icons--option" src="img/vue-icon.svg" />
-              <img class="skills__icons--option" src="img/node-icon.svg" />
-            </div>
-            <div class="skills__icons--box">
-              <img class="skills__icons--option" src="img/ts-icon.svg" />
-              <img class="skills__icons--option" src="img/git-icon.svg" />
-              <img class="skills__icons--option" src="img/github-icon.svg" />
+        <div class="skills_card">
+          <div class="circle-text">중하<br />45%</div>
+          <div class="spinner-box">
+            <div class="typescript_border circle-border">
+              <div class="circle-core"></div>
             </div>
           </div>
-        </div>
-        <div class="skills__container">
-          <div class="skills__text">
-            <h2>REACT <중하></h2>
-            <p>-주로 사용하는 Framework는 React입니다</p>
-            <p>-React를 이용해 웹 앱을 만들 수 있습니다</p>
-            <p>-React 문법을 따로 정리하고 숙지하고 있습니다</p>
-            <p>-작업물을 만들며 익숙해지는 중입니다</p>
-          </div>
-          <div class="skills__icons">
-            <div class="skills__icons--box">
-              <img class="skills__icons--option" src="img/html-icon.svg" />
-              <img class="skills__icons--option" src="img/css-icon.svg" />
-              <img class="skills__icons--option" src="img/js-icon.svg" />
-            </div>
-            <div class="skills__icons--box">
-              <img class="skills__icons--option skills--opacity" src="img/react-icon.svg" />
-              <img class="skills__icons--option" src="img/vue-icon.svg" />
-              <img class="skills__icons--option" src="img/node-icon.svg" />
-            </div>
-            <div class="skills__icons--box">
-              <img class="skills__icons--option" src="img/ts-icon.svg" />
-              <img class="skills__icons--option" src="img/git-icon.svg" />
-              <img class="skills__icons--option" src="img/github-icon.svg" />
-            </div>
-          </div>
-        </div>
-        <div class="skills__container">
-          <div class="skills__text">
-            <h2>NODE.JS<하></h2>
-            <p>-Node.js에 대한 강의를 들었으나 사용을 위해선 많은 검색과 시간 필요로 합니다</p>
-           
-          </div>
-          <div class="skills__icons">
-            <div class="skills__icons--box skills__icons--hcj">
-              <img class="skills__icons--option" src="img/html-icon.svg" />
-              <img class="skills__icons--option" src="img/css-icon.svg" />
-              <img class="skills__icons--option" src="img/js-icon.svg" />
-            </div>
-            <div class="skills__icons--box skills__icons--rvn">
-              <img class="skills__icons--option " src="img/react-icon.svg" />
-              <img class="skills__icons--option" src="img/vue-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/node-icon.svg" />
-            </div>
-            <div class="skills__icons--box skills__icons--git">
-              <img class="skills__icons--option" src="img/ts-icon.svg" />
-              <img class="skills__icons--option " src="img/git-icon.svg" />
-              <img class="skills__icons--option " src="img/github-icon.svg" />
-            </div>
-          </div>
-        </div>
-        <div class="skills__container">
-          <div class="skills__text">
-            <h2>VUE.JS, TYPESCRIPT<zero></h2>
-            <p>-VUE.JS에 대해 학습 예정입니다</p>
-            <p>-React에 적용 시키기 위해 TypeScript에 대해 학습 예정입니다</p>
-          </div>
-          <div class="skills__icons">
-            <div class="skills__icons--box skills__icons--hcj">
-              <img class="skills__icons--option" src="img/html-icon.svg" />
-              <img class="skills__icons--option" src="img/css-icon.svg" />
-              <img class="skills__icons--option" src="img/js-icon.svg" />
-            </div>
-            <div class="skills__icons--box skills__icons--rvn">
-              <img class="skills__icons--option " src="img/react-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/vue-icon.svg" />
-              <img class="skills__icons--option " src="img/node-icon.svg" />
-            </div>
-            <div class="skills__icons--box skills__icons--git">
-              <img class="skills__icons--option skills--opacity" src="img/ts-icon.svg" />
-              <img class="skills__icons--option " src="img/git-icon.svg" />
-              <img class="skills__icons--option " src="img/github-icon.svg" />
-            </div>
-          </div>
-        </div>
-        <div class="skills__container">
-          <div class="skills__text">
-            <h2>GIT, GITHUB</h2>
-            <p>-터미널을 이용하여 branch를 만들 수 있고 commit도 할 수 있습니다</p>
-            <p>-개인작업이 아닌 협업 시 git push origin main을 입력하는 대참사를 일으키지 않습니다</p>
-            <p>-Github Desktop을 이용할 수 있습니다만 터미널을 주로 이용합니다</p>
-          </div>
-          <div class="skills__icons">
-            <div class="skills__icons--box skills__icons--hcj">
-              <img class="skills__icons--option" src="img/html-icon.svg" />
-              <img class="skills__icons--option" src="img/css-icon.svg" />
-              <img class="skills__icons--option" src="img/js-icon.svg" />
-            </div>
-            <div class="skills__icons--box skills__icons--rvn">
-              <img class="skills__icons--option" src="img/react-icon.svg" />
-              <img class="skills__icons--option" src="img/vue-icon.svg" />
-              <img class="skills__icons--option" src="img/node-icon.svg" />
-            </div>
-            <div class="skills__icons--box skills__icons--git">
-              <img class="skills__icons--option" src="img/ts-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/git-icon.svg" />
-              <img class="skills__icons--option skills--opacity" src="img/github-icon.svg" />
-            </div>
-          </div>
+          <div class="skills_title skills_title_typescript">Typescript</div>
         </div>
       </div>
-    </div>
-    <div style="text-align: center">
-      <button class="skills__btn skills__btn--left"><i class="fas fa-arrow-left fa-2x"></i></button>
-      <button class="skills__btn skills__btn--right"><i class="fas fa-arrow-right fa-2x"></i></button>
+      <div>
+        <div class="skills_card">
+          <div class="circle-text">중<br />60%</div>
+          <div class="spinner-box">
+            <div class="css_border circle-border">
+              <div class="circle-core"></div>
+            </div>
+          </div>
+          <div class="skills_title skills_title_css">CSS3, Scss</div>
+        </div>
+        <div class="skills_card">
+          <div class="circle-text">중<br />55%</div>
+          <div class="spinner-box">
+            <div class="react_border circle-border">
+              <div class="circle-core"></div>
+            </div>
+          </div>
+          <div class="skills_title skills_title_react">React, Redux, Styled-component</div>
+        </div>
+        <div class="skills_card">
+          <div class="circle-text">중상<br />78%</div>
+          <div class="spinner-box">
+            <div class="git_border circle-border">
+              <div class="circle-core"></div>
+            </div>
+          </div>
+          <div class="skills_title skills_title_git">git, github</div>
+        </div>
+      </div>
     </div>
     <!-- 작업물 -->
-    <div class="project__head">Projects</div>
-    <div class="project__container" data-aos="fade-up" data-aos-duration="3000">
-      <div class="project__card">
-        <img class="project__img" src="img/potmain.png" />
-        <div class="project__box">
-          <div class="project__box--title">
+    <div class="project_header">Projects</div>
+    <div class="project_container">
+      <div class="project_card">
+        <img class="project_img" src="img/potmain.png" />
+        <div class="project_box">
+          <div class="project_box-title">
             포트폴리오
             <hr />
           </div>
-          <div class="project__box--text">
+          <div class="project_box-text">
             <p>포트폴리오 웹 사이트입니다</p>
-            <p>HTML, CSS, Jquery를 사용했습니다</p>
+            <p>Front-End : HTML, CSS, Jquery</p>
           </div>
-          <div class="project__box__btn">
+          <div class="project_box_btn">
             <div></div>
-            <button class="project__btn" onclick="window.open('https://github.com/pomeranian91/portfolio.git')"><a href="">Github에서 상세내용보기</a></button>
-            <button class="project__btn" onClick="window.open('https://pomeranian91.github.io/portfolio/')"><a href="">Page보러가기</a></button>
+            <button class="project_btn project_portfolio-git" onclick="window.open('https://github.com/pomeranian91/portfolio.git')"><a href="">Github에서 상세내용보기</a></button>
+            <button class="project_btn project_portfolio-page" onClick="window.open('https://pomeranian91.github.io/portfolio/')"><a href="">Page보러가기</a></button>
             <div></div>
           </div>
         </div>
       </div>
-      <div class="project__card">
-        <img class="project__img" src="img/ani.png" />
-        <div class="project__box">
-          <div class="project__box--title">
+      <div class="project_card">
+        <img class="project_img" src="img/ani.png" />
+        <div class="project_box">
+          <div class="project_box-title">
             애니메이션 노트
             <hr />
           </div>
-          <div class="project__box--text">
+          <div class="project_box-text">
             <p>애니메이션 전시 사이트입니다</p>
-            <p>HTML, CSS, JavaScript를 사용했습니다</p>
+            <p>Front-End : HTML, CSS, JavaScript</p>
           </div>
-          <div class="project__box__btn">
+          <div class="project_box_btn">
             <div></div>
-            <button class="project__btn project__aninotepad--git"><a href="">Github에서 상세내용보기</a></button>
-            <button class="project__btn project__aninotepad--page"><a href="">Page보러가기</a></button>
-            <div></div>
-          </div>
-        </div>
-      </div>
-      <div class="project__card">
-        <img class="project__img" src="img/potmain.png" />
-        <div class="project__box">
-          <div class="project__box--title">
-            가상 쇼핑몰
-            <hr />
-          </div>
-          <div class="project__box--text">
-            <p>포트폴리오용 가상의 쇼핑몰입니다</p>
-            <p>React를 사용했습니다</p>
-          </div>
-          <div class="project__box__btn">
-            <div></div>
-            <button class="project__btn" onclick="window.open('')"><a href="">Github에서 상세내용보기</a></button>
-            <button class="project__btn" onClick="window.open('')"><a href="">Page보러가기</a></button>
+            <button class="project_btn project_aninotepad-git"><a href="">Github에서 상세내용보기</a></button>
+            <button class="project_btn project_aninotepad-page"><a href="">Page보러가기</a></button>
             <div></div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- 연락처 -->
-    <div class="contact__container contact__head">
-      <div class="contact__title">CONTACT</div>
-      <div class="contact__box">
+    <div class="contact_container contact_header">
+      <div class="contact_title">CONTACT</div>
+      <div class="contact_box">
         <div class="mobileNum"><i class="fas fa-mobile-alt fa-3x m-3"></i></div>
         <div class="emailadress"><i class="far fa-envelope fa-3x m-3"></i></div>
         <div class="gitadress"><i class="fab fa-github fa-3x m-3"></i></div>
         <div class="blogadress"><i class="fab fa-blogger fa-3x m-3"></i></div>
       </div>
-      <div class="contact__text">내용</div>
+      <div class="contact_text">내용</div>
     </div>
 
     <footer style="font-size: 12px; background: var(--b-color); color: white; text-align: center">©2021.CHOYONGWOO All rights reserved.</footer>

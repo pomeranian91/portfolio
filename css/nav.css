@@ -5,13 +5,13 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 30px;
 }
-.grid-container__nav {
+.grid-container_nav {
   color: #ffffff;
   text-align: center;
   cursor: pointer;
   margin-top: 5px;
 }
-.grid-container__nav:hover {
+.grid-container_nav:hover {
   color: var(--b-color);
   background-color: var(--wy-color);
   border-radius: 20px;
@@ -33,10 +33,10 @@
   border: none;
   text-align: center;
 }
-.plzscroll__container {
+.plzscroll_container {
   position: relative;
 }
-.plzscroll__box {
+.plzscroll_box {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,13 +48,13 @@
   color: white;
   opacity: 0.3;
 }
-.plzscroll__ico {
+.plzscroll_ico {
   width: 24px;
   height: 40px;
   border: 2px solid white;
   border-radius: 50px;
 }
-.plzscroll__ico::before {
+.plzscroll_ico::before {
   position: absolute;
   top: 10px;
   left: 50%;
@@ -68,7 +68,7 @@
   animation-iteration-count: infinite;
   animation-duration: 1s;
 }
-.plzscroll__text {
+.plzscroll_text {
   font-size: 18px;
 }
 @keyframes scrolldot {

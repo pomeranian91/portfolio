@@ -4,10 +4,9 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  text-align: center;
   color: var(--b-color);
 }
-.home__box {
+.home_box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -19,24 +18,47 @@
   top: 0px;
 }
 
-.home__main {
+.home_main {
   background: var(--b-color);
   color: white;
   font-size: 5vw;
   letter-spacing: 3px;
 }
-.home__main2 {
-  font-size: 4vw;
-  letter-spacing: 3px;
+.home_main2 {
+  width: 80%;
+  display: flex;
+  align-items: center;
 }
-.home__main3 {
+.home_main2_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 60%;
+  margin-right: 30px;
+}
+.home_main2_text h3 {
+  font-family: "Nanum Gothic Coding", monospace;
+  font-weight: 700;
+}
+.home_main2_text div {
+  font-size: 1.2em;
+  font-family: "Nanum Gothic Coding", monospace;
+  font-weight: 600;
+}
+.home_main2_img {
+  width: 30%;
+}
+.home_mypic {
+  width: 100%;
+  border-radius: 15px;
+}
+.home_main3 {
   background: var(--b-color);
   color: white;
   font-size: 4vw;
 }
-.home__main--text2 {
+.home_main-text2 {
   background: url("https://media.vlpt.us/images/pomeranian91/post/03702bae-b4d0-477a-94b6-4d966ec1f863/stripedback.jpg");
-  /* https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/34f95a7d-e9bf-4a3a-81e4-eef3f4d6ae28/d5ld63s-ff19c36d-0e2f-4712-b6da-384b7b4852c9.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM0Zjk1YTdkLWU5YmYtNGEzYS04MWU0LWVlZjNmNGQ2YWUyOFwvZDVsZDYzcy1mZjE5YzM2ZC0wZTJmLTQ3MTItYjZkYS0zODRiN2I0ODUyYzkuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.4CPvgCjA7YN_ISkW4Na0zsvpvTbL9VJbHdtvEYN8Jzc */
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -49,9 +71,8 @@
   animation: hometextstrited 7s linear infinite;
 }
 
-.home__main3--wave {
+.home_main3-wave {
   background: url("https://media.vlpt.us/images/pomeranian91/post/f95218d6-efd6-4745-812e-6d34189f0e7b/wave.svg") repeat-x;
-  /* https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg */
   z-index: 5;
   color: transparent;
   width: 100%;
