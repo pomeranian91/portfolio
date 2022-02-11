@@ -15,6 +15,7 @@
   width: 100vw;
   height: 100vh;
   position: sticky;
+  background: var(--b-color);
   top: 0px;
 }
 
@@ -25,6 +26,7 @@
   letter-spacing: 3px;
 }
 .home_main2 {
+  background: var(--b-color);
   width: 80%;
   display: flex;
   align-items: center;
@@ -35,6 +37,7 @@
   align-items: flex-start;
   width: 60%;
   margin-right: 30px;
+  color: white;
 }
 .home_main2_text h3 {
   font-family: "Nanum Gothic Coding", monospace;

@@ -29,7 +29,7 @@ $(window).scroll(function () {
   $(".home_box").eq(0).css("opacity", homeY);
   let homeY2 = (-1 / 500) * scrollHeight + 3;
   $(".home_box").eq(1).css("opacity", homeY2);
-  let homeY3 = (-1 / 500) * scrollHeight + 4.8;
+  let homeY3 = (-1 / 500) * scrollHeight + 4.7;
   $(".home_box").eq(2).css("opacity", homeY3);
 });
 

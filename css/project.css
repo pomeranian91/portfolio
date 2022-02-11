@@ -2,6 +2,8 @@
   text-align: center;
   padding-top: 200px;
   font-size: 100px;
+  background: var(--b-color);
+  color: var(--g-color);
 }
 
 .project_container {
@@ -11,7 +13,8 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  margin: 10px 0px;
+  padding: 10px 0px;
+  background: var(--b-color);
 }
 .project_card {
   margin: 20px;
@@ -22,6 +25,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: white;
   box-shadow: -5px -5px 20px #fff, 5px 5px 20px #babecc;
 }
 .project_btn {
