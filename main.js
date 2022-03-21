@@ -34,7 +34,6 @@ $(window).scroll(function () {
 });
 
 //타이핑 효과
-
 window.addEventListener("load", function () {
   let homeTyping = document.querySelector(".home_main-text1");
   let homeText = document.querySelector(".home_main-text1").innerHTML;
